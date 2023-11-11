@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="math.css">
+        <link rel="icon" href="image/math.png" type="image/x-icon"/>
+
+	<title>رياضيات -فروض</title>
+</head>
+<body>
+
+         <header>
+        <a href="math.html" class="logo">العلم نور</a>
+        <nav class="navigation">
+            <a href="#Materials">المواد</a>
+            <a href="#Contact">التواصل</a>
+        </nav>
+        <button class="hamburger">
+            <div class="bar"></div>
+
+        </button>
+    </header>
+
+    <nav class="mobile-navAr">
+        <a href="#Materials" class="mobile-navArB">المواد</a>
+        <a href="#Contact" class="mobile-navArB">التواصل</a>
+    </nav>
+
+    <section class="exams"> 
+
+
+    </section>
+
+    <section class="main">
+        <div>
+            <h2 class="title">الرياضيات</h2>
+            <h3  class="title">هدفنا bem 2024<br> <br>
+                
+                يمكنك متابعة صفحتنا على فيسبوك <b><a href="https://www.facebook.com/knowledgeislight2">هنا</a></b><br><br>
+            </h3>
+
+            <div class="exams"> 
+                <a href="math-4am-2016-2017_page-0001.pdf"  class="download-btn">فرض 2016-2017</a>
+                <a href="math-4am-2017-2018_page-0001.pdf"  class="download-btn">فرض 2017-2018</a>
+                <a href="math-4am-2018-2019_page-0001.pdf"  class="download-btn">فرض 2018-2019</a>
+            </div>
+            <div class="exams"> 
+                <a href="math-4am-2019-2020_page-0001.pdf"  class="download-btn">فرض 2019-2020</a>
+                <a href="math-4am-2020-2021_page-0001.pdf"  class="download-btn">فرض 2020-2021</a>
+                <a href="math-4am-2021-2022_page-0001.pdf"  class="download-btn">فرض 2021-2022</a>
+            </div>
+            <div class="exams"> 
+                <a href="math-4am-2022-2023_page-0001.pdf"  class="download-btn">فرض 2022-2023</a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <p class="footer-titleAr">جميع الحقوق محفوظة لدى @ <span>ayoub.dev</span></p>
+        <div class="social-icons">
+
+
+        </div>
+
+    </footer>
+    <script>
+
+        const menu_btn = document.querySelector('.hamburger');
+        const mobile_menu = document.querySelector('.mobile-navAr');
+
+
+
+        menu_btn.addEventListener('click', function () {
+            menu_btn.classList.toggle('is-active')
+            mobile_menu.classList.toggle('is-active')
+        })
+
+        document.querySelectorAll('.mobile-navB').forEach(item => {
+            item.addEventListener('click', event => {
+                menu_btn.classList.toggle('is-active')
+                mobile_menu.classList.toggle('is-active')
+            })
+        })
+
+    </script>
+
+</body>
+</html>
